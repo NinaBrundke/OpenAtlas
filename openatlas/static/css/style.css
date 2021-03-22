@@ -260,21 +260,13 @@ p {
 
 textarea#description {
     height: 8em;
-    width: 65%;
+    width: 100%;
+    resize: vertical!important;
 }
 
 .description {
     margin-top: 1em;
     max-width: 80em;
-}
-
-label[for="description"] {
-    height: 8em;
-}
-
-.table-cell textarea {
-    z-index: 1;
-    position: absolute;
 }
 
 .overlay {
@@ -454,10 +446,12 @@ form input[type="text"].month, form input[type="text"].day {
 
 form div.table-row > div {
     text-align: right;
+    vertical-align: top;
 }
 
 form div.table-row div.table-cell {
     text-align: left;
+    width: 75%;
 }
 
 label.error {
